@@ -5,6 +5,7 @@
   padding: 0;
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
+  list-style: none;
 }
 
 .Container {
@@ -25,11 +26,18 @@
     align-items: center;
     padding-top: 30px;
     gap: 30px;
+    li {
+      list-style: none;
+    }
 
     a {
       text-decoration: none;
       gap: 30px;
       color: #000;
+      font-weight: 600;
+        &:hover {
+          text-decoration:underline;
+        }
     }
   }
 
@@ -90,4 +98,58 @@
       }
     }
   }
+
+}
+.MobilComputing {
+    margin-top: -730px;
+    margin-left:220px;
+    width: 1200px;
+    height:100vh;
+    h2{
+        text-align: center;
+    }
+    ul{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 30px;
+        gap: 30px;
+        li{
+            list-style: none;
+              a{
+                text-decoration: none;
+                color: #000;
+                font-weight: 600;
+                transition: .3s linear;
+                   &:hover{
+                    text-decoration: underline;
+                   }
+              }
+        }
+
+    }
+    .MobilComputing-bt{
+        padding-top: 500px;
+        text-align: center;
+          h1{
+            margin-top: -10px;
+            padding-bottom: 10px;
+          }
+          p{
+            padding-bottom: 10px;
+          }
+          button{
+            border: none;
+            border-radius: 10px;
+            padding: 10px;
+            background: #000;
+            color: #fff;
+            cursor: pointer;
+    
+            &:hover {
+              background: #757575;
+              transform: scale(0.9);
+            }
+          }
+    }
 }
